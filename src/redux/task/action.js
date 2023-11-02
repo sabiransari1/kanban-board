@@ -15,7 +15,7 @@ export const getTasks = async (dispatch) => {
     });
 
     const data = await res.json();
-    dispatch({ type: TASK_GET_SUCCESS });
+    dispatch({ type: TASK_GET_SUCCESS, payload: data.boards });
   } catch (error) {
     dispatch({ type: TASK_ERROR, payload: error });
   }
