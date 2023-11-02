@@ -11,9 +11,9 @@ export const AllRoutes = () => {
       <Route
         path="/kanban-board"
         element={
-          // <PrivateRoutes>
-          <Home />
-          // </PrivateRoutes>
+          <PrivateRoutes>
+            <Home />
+          </PrivateRoutes>
         }
       />
     </Routes>
